@@ -19,6 +19,7 @@ def cambio(money, moneyArray):
 price = float(input("Ingrese el precio: "))
 money = float(input("Ingrese la cuanto dinero usara para pagar: "))
 moneyArray = [0, 0, 0, 0, 0]
+tiposArray = ["$20", "$10", "$5", "$2", "$1"]
 
 if money < price:
     print("No se puede pagar el precio")
@@ -26,5 +27,6 @@ elif money == price:
     print("Pago exacto")
 else:
     cambio(money - price, moneyArray)
-print("$20|$10|$5|$2|$1")
+
+print(tiposArray)
 print(moneyArray)
