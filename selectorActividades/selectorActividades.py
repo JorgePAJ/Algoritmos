@@ -1,4 +1,4 @@
-def selectActivity(activities):
+def validActivities(activities):
     # Declaras un indice para recorrer el arreglo
     idx = 0
 
@@ -29,7 +29,7 @@ activities = [(1, 4), (3, 5), (0, 6), (5, 7), (3, 8), (5, 9),
 
 # Llamamos la funcion que nos devolvera un set con los indices de
 # las actividades que se pueden realizar en el tiempo
-result = selectActivity(activities)
+result = validActivities(activities)
 
 # Imprimimos los valores del array base a los valores guardados en el set
 print([activities[i] for i in result])
